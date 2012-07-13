@@ -19,7 +19,7 @@ class HeaderView extends Backbone.View
   showWordnikDev: (e) ->
     @trigger(
       'update-swagger-ui'
-      {discoveryUrl:"http://api.wordnik.com/v4/resources.json", apiKey:"***REMOVED***"}
+      {discoveryUrl:"http://api.wordnik.com/v4/resources.json", apiKey:""}
     )
 
   showCustomOnKeyup: (e) ->
