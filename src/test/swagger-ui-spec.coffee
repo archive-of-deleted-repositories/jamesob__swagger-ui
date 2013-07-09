@@ -1,5 +1,4 @@
-window.api_key = '***REMOVED***'
-window.discoveryUrl = "http://api.wordnik.com/v4/resources.json"
+window.url = "http://api.wordnik.com/v4/resources.json"
 
 describe 'SwaggerUi', ->
   
@@ -8,7 +7,7 @@ describe 'SwaggerUi', ->
     beforeEach ->
       window.ui = new SwaggerUi
         api_key: window.api_key
-        discoveryUrl: window.discoveryUrl
+        url: window.url
       waitsFor ->
         ui.ready
     
